@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 import { login } from "../support/commands";
 
 const email = "Admin";

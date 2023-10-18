@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^8.1.0",
+    "@faker-js/faker": "^8.2.0",
     "cypress": "^12.11.0",
+    "cypress-if": "^1.10.5",
     "cypress-mochawesome-reporter": "^3.6.0",
     "cypress-multi-reporters": "^1.6.3",
     "mochawesome": "^7.1.3",

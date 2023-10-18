@@ -1,19 +1,20 @@
-export function login(email, password) {
-  cy.get('input[name="username"]').type(email);
+export function login(username, password) {
+  cy.get('input[name="username"]').type(username);
   cy.get('input[name="password"]').type(password);
   cy.get('button[type="submit"]').click();
 }
 
 /*
  * Faz login na conta do usuário.
- * {String} email
+ * {String} username
  * {String} password
  */
-Cypress.Commands.add("login", (email, password) => {
+Cypress.Commands.add("login", (username, password) => {
   cy.session(
-    email,
+    username,
     () => {
-      login(email, password);
+      cy.visit("/");
+      login(username, password);
     },
     {
       cacheAcrossSpecs: true,
@@ -22,4 +23,5 @@ Cypress.Commands.add("login", (email, password) => {
       },
     },
   );
+  cy.visit("/");
 });
