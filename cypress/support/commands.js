@@ -5,7 +5,6 @@ export function login(username, password) {
 }
 
 /*
- * Faz login na conta do usuário.
  * {String} username
  * {String} password
  */
