@@ -1,11 +1,11 @@
 # language: en
 Feature: Login no site da OrangeHRM
-    @Positivo @smokeTest
+    @Positivo @SmokeTest
     Scenario: Login bem-sucedido
         Given que estou na página de login
         When realizo o login com credenciais válidas
         Then login é efetuado com sucesso
-    @Negativo @regressivo
+    @Negativo @Regressivo
     Scenario Outline: Login sem sucesso: <testDescription>
         Given que estou na página de login
         When realizo o login com "<login>" e "<senha>"

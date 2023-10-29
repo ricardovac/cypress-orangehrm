@@ -1,9 +1,9 @@
 import loginElements from "../elements/login.elements";
 
 export function login(username, password) {
-  cy.get(loginElements.usernameInput()).type(username);
-  cy.get(loginElements.passwordInput()).type(password);
-  cy.get(loginElements.loginSubmitButton()).click();
+  cy.get(loginElements.usernameInput).type(username);
+  cy.get(loginElements.passwordInput).type(password);
+  cy.get(loginElements.loginSubmitButton).click();
 }
 
 /*
@@ -14,7 +14,6 @@ Cypress.Commands.add("login", (username, password) => {
   cy.session(
     username,
     () => {
-      cy.visit("/");
       login(username, password);
     },
     {
@@ -22,7 +21,6 @@ Cypress.Commands.add("login", (username, password) => {
       validate: () => {
         return cy.getCookie("orangehrm").should("exist");
       },
-    },
+    }
   );
-  cy.visit("/");
 });

@@ -1,7 +1,7 @@
 import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import LoginPage from "../pages/login.page";
-const loginPage = new LoginPage();
 
+const loginPage = new LoginPage();
 const name = "Admin";
 const password = "admin123";
 

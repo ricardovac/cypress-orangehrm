@@ -31,7 +31,7 @@
             "name": "que estou na página de login",
             "result": {
               "status": "passed",
-              "duration": 24425000000
+              "duration": 3199000000
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "realizo o login com credenciais válidas",
             "result": {
               "status": "passed",
-              "duration": 5338000000
+              "duration": 2291000000
             }
           },
           {
@@ -51,7 +51,7 @@
             "name": "login é efetuado com sucesso",
             "result": {
               "status": "passed",
-              "duration": 517000000
+              "duration": 562000000
             }
           }
         ]
@@ -80,17 +80,17 @@
             "name": "que estou na página de login",
             "result": {
               "status": "passed",
-              "duration": 2785000000
+              "duration": 2937000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "realizo login com \"admin1234\" e \"admin1234\"",
+            "name": "realizo o login com \"username\" e \"senha\"",
             "result": {
               "status": "passed",
-              "duration": 5064000000
+              "duration": 1612000000
             }
           },
           {
@@ -100,7 +100,7 @@
             "name": "alerta de \"login incorreto\" é exibido com sucesso",
             "result": {
               "status": "passed",
-              "duration": 417000000
+              "duration": 427000000
             }
           }
         ]
@@ -129,17 +129,17 @@
             "name": "que estou na página de login",
             "result": {
               "status": "passed",
-              "duration": 2663000000
+              "duration": 4149000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "realizo login com \"\" e \"admin1234\"",
+            "name": "realizo o login com \"\" e \"senha\"",
             "result": {
               "status": "passed",
-              "duration": 672000000
+              "duration": 597000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "alerta de \"não preenchimento do username\" é exibido com sucesso",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 18000000
             }
           }
         ]
@@ -178,17 +178,17 @@
             "name": "que estou na página de login",
             "result": {
               "status": "passed",
-              "duration": 2369000000
+              "duration": 2964000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "realizo login com \"admin1234\" e \"\"",
+            "name": "realizo o login com \"username\" e \"\"",
             "result": {
               "status": "passed",
-              "duration": 708000000
+              "duration": 647000000
             }
           },
           {
