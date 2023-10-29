@@ -1,7 +1,9 @@
+import loginElements from "../elements/login.elements";
+
 export function login(username, password) {
-  cy.get('input[name="username"]').type(username);
-  cy.get('input[name="password"]').type(password);
-  cy.get('button[type="submit"]').click();
+  cy.get(loginElements.usernameInput()).type(username);
+  cy.get(loginElements.passwordInput()).type(password);
+  cy.get(loginElements.loginSubmitButton()).click();
 }
 
 /*
