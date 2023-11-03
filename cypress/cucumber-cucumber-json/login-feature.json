@@ -1,0 +1,193 @@
+[
+  {
+    "description": "    Testar se o login no site da OrangeHRM está funcionando corretamente",
+    "keyword": "Feature",
+    "name": "Login no site da OrangeHRM",
+    "line": 2,
+    "id": "login-no-site-da-orangehrm",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login-no-site-da-orangehrm;login-bem-sucedido",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Login bem-sucedido",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 3269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "realizo o login com credenciais válidas",
+            "result": {
+              "status": "passed",
+              "duration": 1648000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "login é efetuado com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 392000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-no-site-da-orangehrm;login-sem-sucesso:-login-incorreto",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Login sem sucesso: login incorreto",
+        "tags": [
+          {
+            "name": "@Negativo",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 1992000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "realizo o login com \"username\" e \"senha\"",
+            "result": {
+              "status": "passed",
+              "duration": 1252000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "alerta de \"login incorreto\" é exibido com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 373000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-no-site-da-orangehrm;login-sem-sucesso:-não-preenchimento-do-username",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Login sem sucesso: não preenchimento do username",
+        "tags": [
+          {
+            "name": "@Negativo",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 1269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "realizo o login com \"\" e \"senha\"",
+            "result": {
+              "status": "passed",
+              "duration": 431000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "alerta de \"não preenchimento do username\" é exibido com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-no-site-da-orangehrm;login-sem-sucesso:-não-preenchimento-da-senha",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Login sem sucesso: não preenchimento da senha",
+        "tags": [
+          {
+            "name": "@Negativo",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 1270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "realizo o login com \"username\" e \"\"",
+            "result": {
+              "status": "passed",
+              "duration": 464000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "alerta de \"não preenchimento da senha\" é exibido com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

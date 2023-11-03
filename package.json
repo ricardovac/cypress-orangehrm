@@ -22,7 +22,7 @@
     "stepDefinitions": "cypress/steps",
     "cucumberJson": {
       "generate": true,
-      "outputFolder": "cypress/cucumber-cucumberJson",
+      "outputFolder": "cypress/cucumber-cucumber-json",
       "filePrefix": "",
       "fileSuffix": "-feature"
     }

@@ -7,10 +7,8 @@ class LoginPage {
   }
 
   submitLogin(username, password) {
-    if (username === "") cy.get(loginElements.usernameInput).clear();
-    else cy.get(loginElements.usernameInput).type(username);
-    if (password === "") cy.get(loginElements.passwordInput).clear();
-    else cy.get(loginElements.passwordInput).type(password);
+    if (username) cy.get(loginElements.usernameInput).type(username);
+    if (password) cy.get(loginElements.passwordInput).type(password);
 
     cy.get(loginElements.loginSubmitButton).click();
   }

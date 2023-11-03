@@ -1,20 +1,20 @@
 import loginElements from "../elements/login.elements";
 
-export function login(username, password) {
-  cy.get(loginElements.usernameInput).type(username);
-  cy.get(loginElements.passwordInput).type(password);
-  cy.get(loginElements.loginSubmitButton).click();
-}
-
 /*
  * {String} username
  * {String} password
  */
-Cypress.Commands.add("login", (username, password) => {
+Cypress.Commands.add("login", () => {
   cy.session(
-    username,
+    "login",
     () => {
-      login(username, password);
+      Cypress.session.clearAllSavedSessions();
+      cy.visit(
+        "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+      );
+      cy.get(loginElements.usernameInput).type("Admin");
+      cy.get(loginElements.passwordInput).type("admin123");
+      cy.get(loginElements.loginSubmitButton).click();
     },
     {
       cacheAcrossSpecs: true,

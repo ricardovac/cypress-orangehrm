@@ -12,6 +12,9 @@ Given(/^que estou na página de login$/, () => {
   loginPage.validateLoginPage();
 });
 
+/*
+ * Scenario: Login bem-sucedido.
+ */
 When(/^realizo o login com credenciais válidas$/, () => {
   loginPage.submitLogin(name, password);
 });
@@ -20,12 +23,15 @@ Then(/^login é efetuado com sucesso$/, () => {
   loginPage.validateSuccessfulLogin();
 });
 
+/*
+ * Scenario: Login sem sucesso: <mensagem>
+ */
 When(/^realizo o login com "([^"]*)" e "([^"]*)"$/, (name, password) => {
   loginPage.submitLogin(name, password);
 });
 
-Then(/^alerta de "([^"]*)" é exibido com sucesso$/, (errorType) => {
-  if (errorType === "login incorreto") {
+Then(/^alerta de "([^"]*)" é exibido com sucesso$/, (message) => {
+  if (message === "login incorreto") {
     loginPage.validateErrorLoginAlert();
   } else {
     loginPage.validateSpanErrorRequired();
