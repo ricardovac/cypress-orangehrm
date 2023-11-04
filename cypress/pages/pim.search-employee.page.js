@@ -50,10 +50,7 @@ class PimSearchEmployeePage {
   validateNoRecordsMessage(message) {
     // Validando se a mensagem de nenhum registro encontrado é exibida
     cy.get(pimElements.noRecordsToast).should("be.visible");
-    cy.get(pimElements.noRecordsToast)
-      .find(pimElements.noRecordsToastTitle)
-      .eq(1)
-      .should("have.text", message);
+    cy.get(pimElements.noRecordsToastTitle).should("have.text", message);
   }
 }
 

@@ -1,6 +1,6 @@
 [
   {
-    "description": "  Como um usuário logado\n  Eu quero buscar um funcionário",
+    "description": "  Como um usuário logado\n  Eu quero buscar um funcionário no PIM",
     "keyword": "Feature",
     "name": "Buscar um funcionário",
     "line": 2,
@@ -11,12 +11,12 @@
       {
         "id": "buscar-um-funcionário;busca-um-funcionário-que-existe",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 10,
         "name": "Busca um funcionário que existe",
         "tags": [
           {
             "name": "@Positivo",
-            "line": 10
+            "line": 9
           }
         ],
         "type": "scenario",
@@ -25,50 +25,40 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "Que estou logado no sistema",
+            "name": "Que estou na página de busca de funcionários",
             "result": {
               "status": "passed",
-              "duration": 167000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Na página de busca de funcionários",
-            "result": {
-              "status": "passed",
-              "duration": 1562000000
+              "duration": 951000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
+            "line": 11,
             "name": "Um funcionário é buscado pelo nome e sobrenome",
             "result": {
               "status": "passed",
-              "duration": 1333000000
+              "duration": 2081000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 12,
             "name": "Espera o autocomplete carregar e clica no botão Search",
             "result": {
               "status": "passed",
-              "duration": 1439000000
+              "duration": 1587000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 13,
             "name": "O sistema deve retornar o funcionário buscado na tabela",
             "result": {
               "status": "passed",
-              "duration": 376000000
+              "duration": 441000000
             }
           }
         ]
@@ -76,12 +66,12 @@
       {
         "id": "buscar-um-funcionário;busca-um-funcionário-que-não-existe",
         "keyword": "Scenario",
-        "line": 23,
+        "line": 22,
         "name": "Busca um funcionário que não existe",
         "tags": [
           {
             "name": "@Negativo",
-            "line": 16
+            "line": 15
           }
         ],
         "type": "scenario",
@@ -90,50 +80,40 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "Que estou logado no sistema",
+            "name": "Que estou na página de busca de funcionários",
             "result": {
               "status": "passed",
-              "duration": 138000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "Na página de busca de funcionários",
-            "result": {
-              "status": "passed",
-              "duration": 594000000
+              "duration": 770000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
+            "line": 17,
             "name": "Um funcionário é buscado com o nome \"Nome\" e sobrenome \"Inexistente\"",
             "result": {
               "status": "passed",
-              "duration": 729000000
+              "duration": 845000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 18,
             "name": "Clica no botão Search",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 148000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 19,
             "name": "O sistema deve retornar a mensagem \"No Records Found\" na tela",
             "result": {
               "status": "passed",
-              "duration": 524000000
+              "duration": 484000000
             }
           }
         ]

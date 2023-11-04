@@ -24,5 +24,6 @@ export default {
   tableCard: ".oxd-table-card",
   tableCardNames: "[data-v-6c07a142]",
   noRecordsToast: "#oxd-toaster_1",
-  noRecordsToastTitle: ".oxd-toast-content-text",
+  noRecordsToastTitle:
+    ".oxd-text.oxd-text--p.oxd-text--toast-message.oxd-toast-content-text",
 };

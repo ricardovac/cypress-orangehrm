@@ -1,11 +1,10 @@
 # language: en
 Feature: Buscar um funcionário
   Como um usuário logado
-  Eu quero buscar um funcionário
+  Eu quero buscar um funcionário no PIM
 
   Background:
-    Given Que estou logado no sistema
-    And Na página de busca de funcionários
+    Given Que estou na página de busca de funcionários
 
   @Positivo
   Scenario: Busca um funcionário que existe
@@ -15,11 +14,9 @@ Feature: Buscar um funcionário
 
   @Negativo
   Scenario Outline: Busca um funcionário que não existe
-    When Um funcionário é buscado com o nome "<nome>" e sobrenome "<sobrenome>"
+    When Um funcionário é buscado com o nome "<firstName>" e sobrenome "<lastName>"
     And Clica no botão Search
-    Then O sistema deve retornar a mensagem "<mensagem>" na tela
+    Then O sistema deve retornar a mensagem "<message>" na tela
     Examples:
-      | mensagem         | nome | sobrenome   |
-      | No Records Found | Nome | Inexistente |
-
-
+      | message          | firstName | lastName    |
+      | No Records Found | Nome      | Inexistente |

@@ -1,16 +1,21 @@
-import { And, Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import {
+  And,
+  When,
+  Then,
+  Before,
+  Given,
+} from "cypress-cucumber-preprocessor/steps";
 import PimSearchEmployeePage from "../pages/pim.search-employee.page";
 
 const pimSearchEmployeePage = new PimSearchEmployeePage();
 
-/*
- * Background
- */
-Given(/^Que estou logado no sistema$/, () => {
-  cy.login();
-});
+let firstName;
+let lastName;
 
-And(/^Na página de busca de funcionários$/, () => {
+/* Background */
+Before(() => cy.login());
+
+Given(/^Que estou na página de busca de funcionários$/, () => {
   pimSearchEmployeePage.openEmployeesPage();
 });
 
@@ -18,15 +23,22 @@ And(/^Na página de busca de funcionários$/, () => {
  * Scenario: Busca um funcionário que existe
  */
 When(/^Um funcionário é buscado pelo nome e sobrenome$/, () => {
-  pimSearchEmployeePage.searchEmployee("John", "Smith");
+  cy.get(
+    "div.oxd-table-card:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)"
+  ).then(($el) => {
+    const name = $el.text();
+    firstName = name.split(" ")[0];
+    lastName = name.split(" ")[1];
+    pimSearchEmployeePage.searchEmployee(firstName, lastName);
+  });
 });
 
 And(/^Espera o autocomplete carregar e clica no botão Search$/, () => {
-  pimSearchEmployeePage.waitAutoCompleteAndSearchEmployee("John");
+  pimSearchEmployeePage.waitAutoCompleteAndSearchEmployee(firstName);
 });
 
 Then(/^O sistema deve retornar o funcionário buscado na tabela$/, () => {
-  pimSearchEmployeePage.validateEmployeeInTable("John", "Smith");
+  pimSearchEmployeePage.validateEmployeeInTable(firstName, lastName);
 });
 
 /*
