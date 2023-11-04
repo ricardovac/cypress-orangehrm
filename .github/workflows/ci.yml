@@ -9,7 +9,7 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v6
       - name: Generate report
-        run: npm run generate:report
+        run: npm run cy:report
       - name: Deploy reports page
         uses: peaceiris/actions-gh-pages@v3
         with:
