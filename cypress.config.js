@@ -1,18 +1,11 @@
 const { defineConfig } = require("cypress");
+const cucumber = require("cypress-cucumber-preprocessor").default;
 
 module.exports = defineConfig({
-  reporter: "cypress-multi-reporters",
-  reporterOptions: {
-    configFile: "reporter-config.json",
-  },
   e2e: {
-    baseUrl: "https://opensource-demo.orangehrmlive.com/web/index.php",
-    viewportHeight: 720,
-    viewportWidth: 1280,
-    defaultCommandTimeout: 6000,
-    requestTimeout: 6000,
+    specPattern: "cypress/integration/*.feature",
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      on("file:preprocessor", cucumber());
     },
   },
 });

@@ -1,0 +1,123 @@
+[
+  {
+    "description": "  Como um usuário logado\n  Eu quero buscar um funcionário no PIM",
+    "keyword": "Feature",
+    "name": "Buscar um funcionário",
+    "line": 2,
+    "id": "buscar-um-funcionário",
+    "tags": [],
+    "uri": "pim.search-employee.feature",
+    "elements": [
+      {
+        "id": "buscar-um-funcionário;busca-um-funcionário-que-existe",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Busca um funcionário que existe",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Que estou na página de busca de funcionários",
+            "result": {
+              "status": "passed",
+              "duration": 951000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Um funcionário é buscado pelo nome e sobrenome",
+            "result": {
+              "status": "passed",
+              "duration": 2081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Espera o autocomplete carregar e clica no botão Search",
+            "result": {
+              "status": "passed",
+              "duration": 1587000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "O sistema deve retornar o funcionário buscado na tabela",
+            "result": {
+              "status": "passed",
+              "duration": 441000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-um-funcionário;busca-um-funcionário-que-não-existe",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Busca um funcionário que não existe",
+        "tags": [
+          {
+            "name": "@Negativo",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Que estou na página de busca de funcionários",
+            "result": {
+              "status": "passed",
+              "duration": 770000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "Um funcionário é buscado com o nome \"Nome\" e sobrenome \"Inexistente\"",
+            "result": {
+              "status": "passed",
+              "duration": 845000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Clica no botão Search",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "O sistema deve retornar a mensagem \"No Records Found\" na tela",
+            "result": {
+              "status": "passed",
+              "duration": 484000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

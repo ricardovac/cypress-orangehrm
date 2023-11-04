@@ -1,0 +1,14 @@
+{
+  "firstName": {
+    "field": ".orangehrm-firstname",
+    "error": ".orangehrm-firstname + .oxd-input-field-error-message"
+  },
+  "middleName": {
+    "field": ".orangehrm-middlename",
+    "error": ".orangehrm-middlename + .oxd-input-field-error-message"
+  },
+  "lastName": {
+    "field": ".orangehrm-lastname",
+    "error": ".orangehrm-lastname + .oxd-input-field-error-message"
+  }
+}
