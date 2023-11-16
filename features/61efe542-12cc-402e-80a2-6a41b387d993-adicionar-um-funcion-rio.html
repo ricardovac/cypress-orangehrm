@@ -744,17 +744,17 @@ input#darkCheck:checked ~ label>svg#moon {
                 
             </div>
             <h1>Feature:
-                <small>Buscar um funcionário</small>
+                <small>Adicionar um funcionário</small>
             </h1>
             
                 <p>
-                    <strong>Description: </strong>   Como um usuário logado<br>  Eu quero buscar um funcionário no PIM </p>
+                    <strong>Description: </strong>   Como um usuário logado<br>  Eu quero adicionar um novo funcionário na tabela. </p>
                 
                <p><strong>File name:</strong>
-                    pim.search-employee.feature
+                    pim-add-employee.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    pim.search-employee.feature</p>
+                    pim-add-employee.feature</p>
             
         </div>
 
@@ -792,7 +792,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">2</div>
+                <div class="total">5</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -948,7 +948,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Busca um funcionário que existe</small></h2>
+                <h2>Scenario: <small>Verifica a adição de um funcionário com sucesso</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -965,7 +965,7 @@ input#darkCheck:checked ~ label>svg#moon {
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
                         </li>
                     
 
@@ -995,67 +995,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        Que estou na página de busca de funcionários
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        Um funcionário é buscado pelo nome e sobrenome
+                                        Que estou logado no sistema
                                         
                                     
 
@@ -1115,7 +1055,67 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        Espera o autocomplete carregar e clica no botão Search
+                                        Na página para adicionar funcionários
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que o formulário foi preenchido corretamente e enviado
                                         
                                     
 
@@ -1175,7 +1175,67 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        O sistema deve retornar o funcionário buscado na tabela
+                                        Os detalhes do funcionário são exibidos na página de detalhes
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Uma mensagem de sucesso é exibida
                                         
                                     
 
@@ -1240,7 +1300,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Busca um funcionário que não existe</small></h2>
+                <h2>Scenario: <small>Verifica a adição de um funcionário com falha: Campos vazios</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1287,67 +1347,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        Que estou na página de busca de funcionários
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        Um funcionário é buscado com o nome "Nome" e sobrenome "Inexistente"
+                                        Que estou logado no sistema
                                         
                                     
 
@@ -1407,7 +1407,67 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        Clica no botão Search
+                                        Na página para adicionar funcionários
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que o formulário foi preenchido com os dados "", "", "" e enviado
                                         
                                     
 
@@ -1467,7 +1527,883 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        O sistema deve retornar a mensagem "No Records Found" na tela
+                                        É exibida a mensagem "Campos vazios"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                            <i class="fa fa-tag fa-lg"></i>
+                            
+                                <span class="tag">@Negativo</span>
+                            
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Verifica a adição de um funcionário com falha: Não preenchimento do firstName</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que estou logado no sistema
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Na página para adicionar funcionários
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que o formulário foi preenchido com os dados "", "Smith", "Doe" e enviado
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        É exibida a mensagem "Não preenchimento do firstName"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                            <i class="fa fa-tag fa-lg"></i>
+                            
+                                <span class="tag">@Negativo</span>
+                            
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Verifica a adição de um funcionário com falha: Não preenchimento do middleName</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que estou logado no sistema
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Na página para adicionar funcionários
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que o formulário foi preenchido com os dados "John", "", "Doe" e enviado
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        É exibida a mensagem "Não preenchimento do middleName"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                            <i class="fa fa-tag fa-lg"></i>
+                            
+                                <span class="tag">@Negativo</span>
+                            
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Verifica a adição de um funcionário com falha: Não preenchimento do lastName</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que estou logado no sistema
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Na página para adicionar funcionários
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        Que o formulário foi preenchido com os dados "John", "Smith", "" e enviado
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        É exibida a mensagem "Não preenchimento do lastName"
                                         
                                     
 
@@ -1568,7 +2504,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            2,
+                            5,
                             0,
                             0,
                             0,
