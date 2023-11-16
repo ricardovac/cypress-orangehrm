@@ -8,6 +8,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Cypress Run
         uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
       - name: Generate report
         run: npm run cy:report
       - name: Deploy reports page
