@@ -10,10 +10,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-      - name: Merge test results into one
-        run: npm run report:merge
-      - name: Generate results
-        run: npm run report:generate
+      - name: Generate report
+        run: npm run cy:report
       - name: Deploy reports page
         uses: peaceiris/actions-gh-pages@v3
         with:

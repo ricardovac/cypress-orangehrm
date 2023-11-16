@@ -6,9 +6,9 @@
   "scripts": {
     "cy:open": "npx cypress open --config watchForFileChanges=false",
     "cy:run": "npx cypress run && npm run cy:report",
-    "cy:report": "node ./cypress/report.js"
+    "cy:report": "node cucumber_html_config.js"
   },
-  "author": "",
+  "author": "Ricardo Vinicius",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^8.2.0",
@@ -21,7 +21,10 @@
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/steps",
     "cucumberJson": {
-      "generate": true
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": "-feature"
     }
   }
 }
