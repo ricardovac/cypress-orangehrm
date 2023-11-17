@@ -51,6 +51,13 @@ npm run cy:open
 npm run cy:run
 ```
 
+- Para gerar o relatório de testes:
+
+```bash
+npm run report:merge
+npm run report:generate
+```
+
 ## Testes
 
 Os testes estão escritos em Gherkin, uma linguagem que permite descrever o comportamento do software de forma fácil de entender. Por exemplo, aqui está um exemplo de um teste para adicionar um funcionário:
@@ -82,6 +89,9 @@ Examples:
 | Não preenchimento do lastName   | John      | Smith      |          |
 ```
 
-# Autor
+# Ver os Relatórios
 
-Este projeto foi criado por Ricardo Vinicius.
+O workflow do GitHub está configurado para gerar os relatórios de testes e publicá-los no GitHub Pages. Você pode acessar os relatórios na URL abaixo:
+
+## [https://ricardovac.github.io/cypress-orangehrm/](https://ricardovac.github.io/cypress-orangehrm/)
+
