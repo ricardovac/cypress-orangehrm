@@ -1,17 +1,18 @@
 const report = require("multiple-cucumber-html-reporter");
 
 report.generate({
+  theme: "bootstrap",
   jsonDir: "cypress/results/json",
   reportPath: "./public/",
   metadata: {
     browser: {
       name: "chrome",
-      version: "60",
+      version: "119.0.6045.123",
     },
     device: "Local test machine",
     platform: {
-      name: "ubuntu",
-      version: "16.04",
+      name: "fedora",
+      version: "38",
     },
   },
   customData: {
